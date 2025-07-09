@@ -3,78 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Materi IPA - Tumbuhan</title>
+  <title>Kuis IPA - Tumbuhan</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="overflow-x-hidden" class="bg-green-50 font-sans">
+<body class="bg-green-50 font-sans">
   <header class="bg-green-600 text-white p-4 shadow-md">
-    <h1 class="text-2xl font-bold">Materi Tumbuhan - IPA Kelas 4</h1>
+    <h1 class="text-2xl font-bold">Kuis Tumbuhan - IPA Kelas 4</h1>
   </header>
 
   <nav class="bg-green-200 text-green-900 p-3 text-sm font-semibold">
     <a href="index.html" class="hover:underline">Beranda</a>
-    <a href="KUIS.html" class="hover:underline ml-4">Kuis</a>
-    <a href="TUGAS.html" class="hover:underline ml-4">Tugas</a>
+    <a href="materi.html" class="hover:underline ml-4">Materi</a>
+    <a href="tugas.html" class="hover:underline ml-4">Tugas</a>
   </nav>
 
-  <main class="p-6 bg-white shadow rounded-xl mt-10 mx-4 text-gray-800">
-    <h2 class="text-xl font-bold mb-4 text-green-700">Bagian-Bagian Tumbuhan</h2>
-   <div class="mt-6">
-      <img src="https://png.pngtree.com/png-vector/20240129/ourmid/pngtree-cartoon-illustration-of-a-mango-tree-png-image_11561010.png">
+  <main class="p-6 bg-white shadow rounded-xl mt-6 mx-4">
+    <h2 class="text-xl font-bold mb-4 text-green-700">Kuis Interaktif</h2>
+    <div id="kuis-container" class="space-y-6 text-gray-800"></div>
+    <div class="flex justify-between mt-6">
+      <button onclick="sebelumnya()" id="prevBtn" class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500">Sebelumnya</button>
+      <button onclick="selanjutnya()" id="nextBtn" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Selanjutnya</button>
     </div>
-  
-    <div class="mb-6">
-      <h3 class="text-lg font-semibold text-green-600 mb-2">1. Akar</h3>
-      <p>Akar berfungsi untuk menyerap air dan mineral dari dalam tanah, serta menopang tumbuhan agar dapat berdiri kokoh. Terdapat dua jenis utama akar:</p>
-      <ul class="list-disc ml-6">
-        <li><strong>Akar tunggang</strong>: akar utama yang tumbuh ke bawah dan bercabang-cabang. Biasanya dimiliki oleh tumbuhan dikotil. Contohnya: mangga, jambu, dan kedelai.</li>
-        <li><strong>Akar serabut</strong>: terdiri dari banyak akar kecil yang tumbuh dari pangkal batang. Umumnya dimiliki oleh tumbuhan monokotil. Contohnya: padi, jagung, dan rumput.</li>
-      </ul>
-      <img src="https://nawabineka.com/wp-content/uploads/2025/02/Screenshot-2025-02-10-at-13.00.57.png" alt="Ilustrasi Akar" class="w-72 mt-3 rounded shadow">
-    </div>
-
-    <div class="mb-6">
-      <h3 class="text-lg font-semibold text-green-600 mb-2">2. Batang</h3>
-      <p>Batang berfungsi sebagai penopang tumbuhan dan tempat jalannya air serta zat makanan dari akar ke daun. Jenis batang dibedakan menjadi dua:</p>
-      <ul class="list-disc ml-6">
-        <li><strong>Batang lunak</strong>: batang yang tidak keras, berair, dan mudah ditekuk. Contoh: bayam, kangkung, dan sawi.</li>
-        <li><strong>Batang berkayu keras</strong>: batang yang kuat dan keras, biasanya dimiliki oleh pohon besar. Contoh: pohon jati, mahoni, dan mangga.</li>
-      </ul>
-      <img src="https://cdn.grid.id/crop/0x0:0x0/x/photo/2020/12/16/651581308.jpg" alt="Ilustrasi Batang" class="w-72 mt-3 rounded shadow">
-    </div>
-
-    <div class="mb-6">
-      <h3 class="text-lg font-semibold text-green-600 mb-2">3. Daun</h3>
-      <p>Daun merupakan tempat utama terjadinya fotosintesis. Bentuk tulang daun dapat membedakan jenis tumbuhan:</p>
-      <ul class="list-disc ml-6">
-        <li><strong>Monokotil</strong>: tulang daun sejajar atau melengkung, contohnya daun jagung dan padi.</li>
-        <li><strong>Dikotil</strong>: tulang daun menyirip atau menjari, contohnya daun mangga dan jambu.</li>
-      </ul>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh74-5hXEjxabCxKlzG8GMZ_XeYBDQ2JmRrg&s" alt="Ilustrasi Daun Monokotil dan Dikotil" class="w-72 mt-3 rounded shadow">
-    </div>
-
-    <div class="mb-6">
-      <h3 class="text-lg font-semibold text-green-600 mb-2">4. Bunga</h3>
-      <p>Bunga adalah alat perkembangbiakan. Di dalamnya terdapat bagian-bagian penting:</p>
-      <ul class="list-disc ml-6">
-        <li><strong>Bunga jantan</strong>: memiliki benang sari sebagai alat kelamin jantan.</li>
-        <li><strong>Bunga betina</strong>: memiliki putik sebagai alat kelamin betina.</li>
-        <li><strong>Bunga sempurna</strong>: memiliki benang sari dan putik sekaligus. Contoh: bunga sepatu dan mawar.</li>
-      </ul>
-      <img src="https://d12man5gwydfvl.cloudfront.net/wp-content/uploads/2018/12/Bunga-bunga-4-940x662.jpg" alt="Ilustrasi Bunga" class="w-72 mt-3 rounded shadow">
-    </div>
-
-    <div class="mb-6">
-      <h3 class="text-lg font-semibold text-green-600 mb-2">5. Buah dan Biji</h3>
-      <p>Buah melindungi biji dan membantu penyebarannya. Biji adalah calon tumbuhan baru. Contoh buah berbiji banyak: semangka. Contoh berbiji tunggal: mangga.</p>
-      <img src="https://asset.kompas.com/crops/K1jAY5yDhzgATIRjGDVrwhoRixI=/12x0:504x328/1200x800/data/photo/2023/05/10/645b49b35af83.png" alt="Ilustrasi Buah dan Biji" class="w-72 mt-3 rounded shadow">
-    </div>
-
- 
+    <div id="hasilKuis" class="mt-6 text-lg font-semibold text-blue-700"></div>
+  </main>
 
   <footer class="bg-green-700 text-white p-4 text-center mt-10">
-    &copy; 2025 IPA Kelas 4 SD - Belajar Menyenangkan Bersama Pak Wan
+    &copy; 2025 IPA Kelas 4 SD - Kuis Tumbuhan
   </footer>
+
+  <script>
+    const soalKuis = [
+      { t: "Apa fungsi daun pada tumbuhan?", o: ["Menyerap air", "Tempat fotosintesis", "Menopang tumbuhan"], j: 1 },
+      { t: "Bagian tumbuhan yang menyerap air adalah...", o: ["Akar", "Batang", "Bunga"], j: 0 },
+      { t: "Bagian tumbuhan yang mengangkut air adalah...", o: ["Biji", "Daun", "Batang"], j: 2 },
+      { t: "Tempat terjadinya fotosintesis adalah...", o: ["Akar", "Daun", "Bunga"], j: 1 },
+      { t: "Bagian yang menyimpan cadangan makanan adalah...", o: ["Batang", "Daun", "Bunga"], j: 0 },
+      { t: "Alat perkembangbiakan tumbuhan adalah...", o: ["Akar", "Daun", "Bunga"], j: 2 },
+      { t: "Buah dan biji merupakan hasil dari...", o: ["Pertumbuhan", "Fotosintesis", "Perkembangbiakan"], j: 2 },
+      { t: "Akar terletak di...", o: ["Atas tanah", "Dalam tanah", "Daun"], j: 1 },
+      { t: "Fotosintesis membutuhkan...", o: ["Cahaya matahari", "Batu", "Air laut"], j: 0 },
+      { t: "Yang melindungi biji adalah...", o: ["Akar", "Buah", "Daun"], j: 1 }
+    ];
+
+    let indexSoal = 0;
+    let jawaban = Array(soalKuis.length).fill(null);
+
+    function tampilkanSoal() {
+      const container = document.getElementById("kuis-container");
+      container.innerHTML = "";
+      const s = soalKuis[indexSoal];
+      let html = `<p><strong>${indexSoal + 1}. ${s.t}</strong></p>`;
+      s.o.forEach((opsi, i) => {
+        html += `<label><input type='radio' name='q${indexSoal}' value='${i}' ${jawaban[indexSoal] == i ? "checked" : ""}/> ${opsi}</label><br>`;
+      });
+      container.innerHTML = html;
+      document.getElementById("prevBtn").disabled = indexSoal === 0;
+      document.getElementById("nextBtn").textContent = indexSoal === soalKuis.length - 1 ? "Selesai" : "Selanjutnya";
+    }
+
+    function sebelumnya() {
+      if (indexSoal > 0) {
+        simpanJawaban();
+        indexSoal--;
+        tampilkanSoal();
+      }
+    }
+
+    function selanjutnya() {
+      simpanJawaban();
+      if (indexSoal < soalKuis.length - 1) {
+        indexSoal++;
+        tampilkanSoal();
+      } else {
+        tampilkanHasil();
+      }
+    }
+
+    function simpanJawaban() {
+      const selected = document.querySelector(`input[name='q${indexSoal}']:checked`);
+      if (selected) jawaban[indexSoal] = parseInt(selected.value);
+    }
+
+    function tampilkanHasil() {
+      let skor = 0;
+      jawaban.forEach((j, i) => {
+        if (j === soalKuis[i].j) skor++;
+      });
+      document.getElementById("kuis-container").innerHTML = "<p>Skor kamu: " + skor + " dari 10 soal.</p>";
+      document.getElementById("prevBtn").style.display = "none";
+      document.getElementById("nextBtn").style.display = "none";
+    }
+
+    window.onload = tampilkanSoal;
+  </script>
 </body>
 </html>
-
